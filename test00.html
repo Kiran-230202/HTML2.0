@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		*{box-sizing: border-box;margin: 0;padding: 0}
+		.nav
+		 {
+		 	height: 50px;
+		 	width: 100%;
+		 	
+		 	background:lightblue;
+		 	text-align: center;
+		 	line-height: 50px;
+		 	font-weight: bold;
+		 	font-size: 24px;
+		 	
+		 }
+
+		 .nav
+		 {
+		 	position: relative;
+		 }
+
+	.test1 .menu
+	{
+		display: inline;
+		/*float: left;*/
+		list-style: none;
+		margin-right: 20px;
+
+		background: lightcoral;
+		padding: 12px 12.34px;
+		
+	}
+
+	.dropdown 
+	{
+		display: none;
+		position: absolute;
+		top:100%;
+		left:50%;
+		background:gray;
+
+	}
+
+	.test1 .menu:hover .dropdown 
+	{
+		display: block;
+	}
+
+
+		
+
+		
+	</style>
+</head>
+<body>
+
+	<div class="nav">
+
+		<div class="test1">
+			<li class="menu">home</li>
+			<li class="menu">about</li>
+
+			<li class="menu">service
+
+				<div class="dropdown">
+					<a>service 1</a>
+					<a>service 2</a>
+					<a>service 3</a>
+					<a>service 4</a>
+				
+				</div>
+			</li>
+
+
+			<li class="menu">contact</li>
+			
+		</div>
+		
+		
+		
+	</div>
+
+		<li class="menu">service</li>
+
+</body>
+</html>
